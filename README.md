@@ -1,1 +1,1 @@
-website: https://ecs.fullerton.edu/~cs332u15
+https://ecs.fullerton.edu/~cs332u15

@@ -1,0 +1,31 @@
+php
+    connect with MySQL RDBMS
+        $link=mysqli_connect($hostName, $userName, $password, $dbName)
+        or die("Unable to connect to host $hostName");
+    // hostName = mariadb
+    // userName = cs332u15
+    // password = MeWgylw3
+
+executing SQL
+-basic search
+    $SQL = "SELECT FirstName, LastName, DOB, Gender
+    FROM Patients WHERE Gender = '$Gender'ORDER BY
+    FirstName DESC";
+    $Patients = $link->query($SQL);"
+-Editing, adding, and deleting records and tables
+    $SQL = "INSERT INTO Patients (FirstName, LastName)
+    VALUES('$firstName', '$lastName')";
+    $Patients = $link->query($SQL);
+
+
+close the connection
+    $Patients->free_result();
+    $link->close();
+
+
+
+in CS332L08.pdf on Canvas
+
+predetermined variables we'll need to use for the project
+$_POST
+$_ENV
