@@ -1,5 +1,5 @@
 -- 3 professors
-INSERT INTO PROFESSOR (ssn, name, sex, title, salary, st_addr, city, state, zip, area_code, phone_num) 
+INSERT INTO Professor (ssn, name, sex, title, salary, st_addr, city, state, zip, area_code, phone_num) 
 VALUES  (111111111, 'John Smith', 'M', 'Professor', 80000, '123 Elm St', 'Anaheim', 'CA', '12345', 111, 111111),
         (222222222, 'Jane Doe', 'F', 'Professor', 70000, '456 Oak St', 'Los Angeles', 'CA', '67890', 222, 222222),
         (333333333, 'Jim Brown', 'M', 'Assistant Professor', 60000, '789 Pine St', 'San Francisco', 'CA', '54321', 333, 333333);
@@ -17,13 +17,13 @@ VALUES  (1, 'Computer Science', '7145551000', 'CS-201', 111111111),
 
 
 -- 4 courses
-INSERT INTO COURSE (Cnum, title, textbook, units, dept_no) 
+INSERT INTO Course (Cnum, title, textbook, units, dept_no) 
 VALUES  (101, 'Intro to Programming', 'C++ Textbook', 3, 1),
         (102, 'Database Systems', 'Database Systems Textbook', 3, 1),
         (103, 'Physics 1', 'Physics Textbook', 4, 1),
         (104, 'Calculus 1', 'Calculus Textbook', 4, 1);
 
-INSERT INTO PREREQUISITE (Cno, prereq) 
+INSERT INTO Prerequisite (Cno, prereq) 
 VALUES  (102, 101),
         (103, 104);
 
